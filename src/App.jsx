@@ -25,6 +25,7 @@ function App() {
           <Suggestions />
         <Routes>
           <Route path='*' element={<ErrorLoader image={ErrorImage} errorMsg={'The page you are looking for could not be located. It may have been moved or deleted.'} />} />
+          <Route path='/youtubeapp/' element={<Main />} />
           <Route path='/' element={<Main />} />
           <Route path='player/:vId/:catId' element={<Player />} />
           <Route path='search/:q' element={<SearchResult />} />
