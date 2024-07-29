@@ -1,0 +1,42 @@
+/* *{
+  outline: 2px solid lime;
+} */
+.custom-scrollbar{
+    scrollbar-width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar {
+    width: 3px; 
+  }
+
+  .custom-scrollbar:hover::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Roundness of the scrollbar thumb */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover{
+    background: #555; /* Color of the scrollbar thumb on hover */
+    
+  }
+  .grid-auto-fit{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2em;
+  }
+ .hide-scrollbar{
+  scrollbar-width: 0px;
+  scrollbar-color: transparent;
+ }
+ .hide-scrollbar::-webkit-scrollbar{
+  width: 0px;
+ }
+ .hide-scrollbar::-webkit-scrollbar-track{
+  background: transparent;
+ }
+ .test{
+  background: #6e6e6e7d;
+  backdrop-filter: blur(2px);
+ }
