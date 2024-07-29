@@ -17,24 +17,24 @@ import Suggestions from './components/main/Suggestions'
 function App() {
   return (
     <ContextProvider>
-      <Router>
+      <Router basename="/youtubeapp">
         <Navbar />
-          <div className='flex items-start'>
+        <div className='flex items-start'>
           <Aside />
           <div className="overflow-y-scroll h-[calc(100dvh-70px)] w-full">
-          <Suggestions />
-        <Routes>
-          <Route path='*' element={<ErrorLoader image={ErrorImage} errorMsg={'The page you are looking for could not be located. It may have been moved or deleted.'} />} />
-          <Route path='/youtubeapp/' element={<Main />} />
-          <Route path='/' element={<Main />} />
-          <Route path='player/:vId/:catId' element={<Player />} />
-          <Route path='search/:q' element={<SearchResult />} />
-          <Route path='category/:catId' element={<Category />} />
-          <Route path='test' element={<TestAPI />} />
-        </Routes>
+            <Suggestions />
+            <Routes>
+              <Route path='*' element={<ErrorLoader image={ErrorImage} errorMsg={'The page you are looking for could not be located. It may have been moved or deleted.'} />} />
+              <Route path='/' element={<Main />} />
+              <Route path='/player/:vId/:catId' element={<Player />} />
+              <Route path='/search/:q' element={<SearchResult />} />
+              <Route path='/category/:catId' element={<Category />} />
+              <Route path='/test' element={<TestAPI />} />
+            </Routes>
           </div>
-          </div>
+        </div>
       </Router>
+
 
     </ContextProvider>
   )
