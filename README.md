@@ -38,10 +38,6 @@ The YouTube Clone Project is a web application designed to mimic the core functi
 
 2. **APIs**:
    - **YouTube Data API**: For fetching video data such as video details, search results, and trending videos.
-   - **Firebase/Firestore**: (Optional) For user authentication and real-time database capabilities.
-
-3. **Deployment**:
-   - **Vercel**: For deploying the frontend applications.
   
 ## Project Structure
 
@@ -65,26 +61,3 @@ The YouTube Clone Project is a web application designed to mimic the core functi
 - **Deployment and Maintenance**:
   - Learn to deploy applications to cloud platforms.
   - Understand the importance of maintaining and updating a deployed application.
-
-## Usage
-
-1. **Clone the Repository**:
-   ```sh
-   https://github.com/Shubham0202/YouTube-Clone.git
-   cd gemini-clone
-2. **Install Dependencies**:
-   ```sh
-   npm install   
-3. **Paste Your YouTube Data API Here**
-   ```sh
-   src/context/ContextProvider.jsx
-4. **Run the Application**:
-   ```sh
-   npm run dev
-6. **Access the Application**:
-   Open your browser and navigate to
-   ```sh
-   localhost:5173
-## Conclusion
-
-The YouTube Clone Project is a comprehensive project that covers a wide range of web development skills and concepts. By working on this project, developers can gain valuable experience in building real-world applications, integrating APIs, and handling user interactions. This project not only enhances technical skills but also provides a deeper understanding of how popular platforms like YouTube operate behind the scenes.
